@@ -2,36 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Module Test Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Employees</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <h2>New Employees</h2>
+    <div class="container">
+        
+        <h3>New Employees</h3>
 
-    <div class="form-section">
-        <label>Enter Name</label>
-        <input type="text" id="name" placeholder="Name">
+        <div class="form">
+            <div class="input-group">
+                <label>Enter Name</label>
+                <input type="text" id="name" placeholder="">
+            </div>
+            <div class="input-group">
+                <label>Enter Profession</label>
+                <input type="text" id="profession" placeholder="">
+            </div>
+            <div class="input-group">
+                <label>Enter Age</label>
+                <input type="number" id="age" placeholder="">
+            </div>
+        </div>
 
-        <label>Enter Profession</label>
-        <input type="text" id="profession" placeholder="Profession">
+        <button id="addUser">Add User</button>
 
-        <label>Enter Age</label>
-        <input type="number" id="age" placeholder="Age">
+        <p id="message"></p>
 
-        <button id="addUserBtn">Add User</button>
+        <div class="employee-section">
+            <h4>Added Employees</h4>
+            <div id="employeeList">
+                <p>You have 0 Employees.</p>
+            </div>
+        </div>
+
     </div>
 
-    <p id="message"></p>
-
-    <h3>Added Employees</h3>
-    <div id="employeeList">
-        <p>You have 0 Employees.</p>
-    </div>
-
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
