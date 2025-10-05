@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Module Test Project</title>
 </head>
+
 <body>
-    
+    <h2>New Employees</h2>
+
+    <div class="form-section">
+        <label>Enter Name</label>
+        <input type="text" id="name" placeholder="Name">
+
+        <label>Enter Profession</label>
+        <input type="text" id="profession" placeholder="Profession">
+
+        <label>Enter Age</label>
+        <input type="number" id="age" placeholder="Age">
+
+        <button id="addUserBtn">Add User</button>
+    </div>
+
+    <p id="message"></p>
+
+    <h3>Added Employees</h3>
+    <div id="employeeList">
+        <p>You have 0 Employees.</p>
+    </div>
 
     <script type="module" src="script.js"></script>
 </body>
+
 </html>
